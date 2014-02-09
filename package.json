@@ -1,0 +1,35 @@
+{
+  "name": "express-sanitizer",
+  "description": "Express middleware for the sanitizer module.",
+  "author": {
+    "name": "Mark Andrews",
+    "email": "mark3d@gmail.com"
+  },
+  "version": "0.1.0",
+  "homepage": "https://github.com/markau/express-sanitizer",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markau/express-sanitizer.git"
+  },
+  "license" : "MIT",
+  "main": "./index.js",
+  "scripts": {
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "sanitizer": "0.1.1"
+  },
+  "keywords": [
+    "express",
+    "sanitize",
+    "sanitization",
+    "xss"
+  ],
+  "bugs": {
+    "url": "https://github.com/markau/express-sanitizer/issues"
+  },
+  "_id": "express-validator@0.1.0",
+  "_from": "express-validator@latest"
+}
