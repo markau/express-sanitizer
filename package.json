@@ -3,7 +3,7 @@
   "description": "Express middleware for the sanitizer module.",
   "author": {
     "name": "Mark Andrews",
-    "email": "mark3d@gmail.com"
+    "email": "20metresbelow@gmail.com"
   },
   "version": "0.1.0",
   "homepage": "https://github.com/markau/express-sanitizer",

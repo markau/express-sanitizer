@@ -57,9 +57,9 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## Contributors
 
-- Mark Andrews <mark3d@gmail.com> - Wrap the sanitizer in an npm package
+- Mark Andrews <20metresbelow@gmail.com> - Wrap the sanitizer in an npm package
 
 ## License
 
-Copyright (c) 2014 Mark Andrews <mark3d@gmail.com>, MIT License
+Copyright (c) 2014 Mark Andrews <20metresbelow@gmail.com>, MIT License
 
