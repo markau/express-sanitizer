@@ -4,7 +4,7 @@
 
 An express middleware for [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer), which wraps [Google Caja sanitizer](https://code.google.com/p/google-caja/wiki/JsHtmlSanitizer).  
 
-A useful complement to the [express-validator](https://github.com/ctavan/express-validator) to fill a gap now that XSS sanitization support has been removed from that module's parent [node-validator](https://github.com/chriso/node-validator).
+A useful complement to the [express-validator](https://github.com/ctavan/express-validator) -- to fill a gap now that XSS sanitization support has been removed from that module's parent [node-validator](https://github.com/chriso/node-validator).
 
 ## Installation
 
@@ -21,14 +21,14 @@ var express = require('express'),
     expressSanitizer = require('express-sanitizer');
 
 app.use(express.bodyParser());
-app.use(expressSanitizer([options])); // this line must be immediately after express.bodyParser()!
+app.use(expressSanitizer([options])); // this line follows express.bodyParser()
 ```
 
 ```javascript
 app.post('/:urlparam', function(req, res) {
   //validation here
 
-  // replace an HTTP posted body property 'propertyToSanitize' with the sanitized string
+  // replace an HTTP posted body property with the sanitized string
   req.body.propertyToSanitize = req.sanitize(req.param('propertyToSanitize'));
 });
 
