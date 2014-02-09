@@ -1,6 +1,6 @@
 # express-sanitizer
 
-[![Build Status](https://secure.travis-ci.org/markau/express-sanitizer.png)](http://travis-ci.org/markau/express-sanitizer)
+[![Build Status](https://travis-ci.org/markau/express-sanitizer.png?branch=master)](https://travis-ci.org/markau/express-sanitizer)
 
 An express middleware for [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer), which wraps [Google Caja sanitizer](https://code.google.com/p/google-caja/wiki/JsHtmlSanitizer).  
 
