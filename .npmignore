@@ -2,5 +2,5 @@ node_modules
 .git
 .gitignore
 .npmignore
-travis.yml
+.travis.yml
 
