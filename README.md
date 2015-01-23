@@ -52,6 +52,9 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## Changelog
 
+### v0.1.1
+- Merged PR removing unused dependency
+
 ### v0.1.0
 - Initial release
 
