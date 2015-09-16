@@ -52,6 +52,9 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## Changelog
 
+### v1.0.1
+- Updated sanitizer dependency to 0.1.2
+
 ### v1.0.0
 - Update to v1
 
