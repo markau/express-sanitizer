@@ -5,7 +5,7 @@
     "name": "Mark Andrews",
     "email": "20metresbelow@gmail.com"
   },
-  "version": "0.1.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/markau/express-sanitizer",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "node": "*"
   },
   "dependencies": {
-    "sanitizer": "0.1.1"
+    "sanitizer": "1.0.0"
   },
   "keywords": [
     "express",
@@ -30,6 +30,6 @@
   "bugs": {
     "url": "https://github.com/markau/express-sanitizer/issues"
   },
-  "_id": "express-validator@0.1.1",
+  "_id": "express-validator@1.0.0",
   "_from": "express-validator@latest"
 }

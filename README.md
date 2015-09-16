@@ -52,6 +52,9 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## Changelog
 
+### v1.0.0
+- Update to v1
+
 ### v0.1.1
 - Merged PR removing unused dependency
 
@@ -60,7 +63,8 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## Contributors
 
-- Mark Andrews <20metresbelow@gmail.com> - Wrap the sanitizer in an npm package
+- Mark Andrews <20metresbelow@gmail.com> 
+- Patrick Hogan <patrick@callinize.com>
 
 ## License
 
