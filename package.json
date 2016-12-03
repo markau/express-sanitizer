@@ -19,7 +19,8 @@
     "node": "*"
   },
   "dependencies": {
-    "sanitizer": "0.1.2"
+    "sanitizer": "0.1.2",
+    "underscore": "1.8.3"
   },
   "keywords": [
     "express",
