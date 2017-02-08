@@ -1,6 +1,11 @@
-# express-sanitizer
-
+[![npm](https://img.shields.io/npm/v/express-sanitizer.svg)](https://github.com/markau/express-sanitizer)
+[![npm](https://img.shields.io/npm/dt/express-sanitizer.svg)](https://github.com/markau/express-sanitizer)
+[![npm](https://img.shields.io/npm/dm/express-sanitizer.svg)](https://github.com/markau/express-sanitizer)
 [![Build Status](https://travis-ci.org/markau/express-sanitizer.png?branch=master)](https://travis-ci.org/markau/express-sanitizer)
+[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/markau/express-sanitizer)
+[![dependencies](https://david-dm.org/markau/express-sanitizer.svg)](https://david-dm.org/markau/express-sanitizer)
+
+# express-sanitizer
 
 An express middleware for [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer), which wraps [Google Caja sanitizer](https://code.google.com/p/google-caja/wiki/JsHtmlSanitizer).  
 
