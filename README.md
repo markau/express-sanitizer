@@ -53,6 +53,10 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## Changelog
 
+### v1.0.2
+- Updated sanitizer dependency to 0.1.3
+- Merged PR #4 from @ScottRamsden
+
 ### v1.0.1
 - Updated sanitizer dependency to 0.1.2
 
@@ -69,8 +73,9 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 - Mark Andrews <20metresbelow@gmail.com> 
 - Patrick Hogan <patrick@callinize.com>
+- Scott Ramsden @ScottRamsden
 
 ## License
 
-Copyright (c) 2014 Mark Andrews <20metresbelow@gmail.com>, MIT License
+Copyright (c) 2017 Mark Andrews <20metresbelow@gmail.com>, MIT License
 
