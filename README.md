@@ -9,27 +9,28 @@ A useful complement to the [express-validator](https://github.com/ctavan/express
 ## Installation
 
 ```
-npm install express-sanitizer
+npm install --save express-sanitizer body-parser
 ```
 
 ## Usage
 
-Needs to be called after express.bodyParser() and before anything that requires the sanitized input, e.g.:
+`expressSanitizer` needs to be instantiated after `bodyParser', and before anything that requires the sanitized input, e.g.:
 
 ```javascript
-var express = require('express'),
-    expressSanitizer = require('express-sanitizer');
+var express = require('express');
+var expressSanitizer = require('express-sanitizer');
+var bodyParser = require('body-parser');
 
-app.use(express.bodyParser());
-app.use(expressSanitizer([options])); // this line follows express.bodyParser()
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(expressSanitizer([options])); // this line follows bodyParser() instantiations
 ```
 
 ```javascript
 app.post('/:urlparam', function(req, res) {
-  //validation here
 
   // replace an HTTP posted body property with the sanitized string
-  req.body.propertyToSanitize = req.sanitize(req.param('propertyToSanitize'));
+  req.body.sanitized = req.sanitize(req.body.propertyToSanitize);
 });
 
 ```
