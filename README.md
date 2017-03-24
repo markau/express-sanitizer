@@ -1,6 +1,11 @@
-# express-sanitizer
+[![npm](https://img.shields.io/npm/v/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
+[![npm](https://img.shields.io/npm/dt/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
+[![npm](https://img.shields.io/npm/dm/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
+[![Build Status](https://travis-ci.org/markau/express-sanitizer.png?branch=master&style=flat-square)](https://travis-ci.org/markau/express-sanitizer)
+[![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
+[![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
 
-[![Build Status](https://travis-ci.org/markau/express-sanitizer.png?branch=master)](https://travis-ci.org/markau/express-sanitizer)
+# express-sanitizer
 
 An express middleware for [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer), which wraps [Google Caja sanitizer](https://code.google.com/p/google-caja/wiki/JsHtmlSanitizer).  
 
@@ -9,27 +14,28 @@ A useful complement to the [express-validator](https://github.com/ctavan/express
 ## Installation
 
 ```
-npm install express-sanitizer
+npm install --save express-sanitizer body-parser
 ```
 
 ## Usage
 
-Needs to be called after express.bodyParser() and before anything that requires the sanitized input, e.g.:
+`expressSanitizer` needs to be instantiated after `bodyParser', and before anything that requires the sanitized input, e.g.:
 
 ```javascript
-var express = require('express'),
-    expressSanitizer = require('express-sanitizer');
+var express = require('express');
+var expressSanitizer = require('express-sanitizer');
+var bodyParser = require('body-parser');
 
-app.use(express.bodyParser());
-app.use(expressSanitizer([options])); // this line follows express.bodyParser()
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(expressSanitizer([options])); // this line follows bodyParser() instantiations
 ```
 
 ```javascript
 app.post('/:urlparam', function(req, res) {
-  //validation here
 
   // replace an HTTP posted body property with the sanitized string
-  req.body.propertyToSanitize = req.sanitize(req.param('propertyToSanitize'));
+  req.body.sanitized = req.sanitize(req.body.propertyToSanitize);
 });
 
 ```
@@ -52,6 +58,10 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## Changelog
 
+### v1.0.2
+- Updated sanitizer dependency to 0.1.3
+- Merged PR #4 from @ScottRamsden
+
 ### v1.0.1
 - Updated sanitizer dependency to 0.1.2
 
@@ -68,8 +78,9 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 - Mark Andrews <20metresbelow@gmail.com> 
 - Patrick Hogan <patrick@callinize.com>
+- Scott Ramsden @ScottRamsden
 
 ## License
 
-Copyright (c) 2014 Mark Andrews <20metresbelow@gmail.com>, MIT License
+Copyright (c) 2017 Mark Andrews <20metresbelow@gmail.com>, MIT License
 
