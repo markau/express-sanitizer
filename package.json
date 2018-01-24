@@ -5,16 +5,15 @@
     "name": "Mark Andrews",
     "email": "20metresbelow@gmail.com"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/markau/express-sanitizer",
   "repository": {
     "type": "git",
     "url": "git://github.com/markau/express-sanitizer.git"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "main": "./index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "engines": {
     "node": "*"
   },
