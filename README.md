@@ -13,32 +13,49 @@ A useful complement to the [express-validator](https://github.com/ctavan/express
 
 ## Installation
 
+Scaffold an application using [express-generator](express-generator)
+
+Then, install this library:
 ```
-npm install --save express-sanitizer body-parser
+npm install --save express-sanitizer
 ```
 
 ## Usage
 
+### Edit `app.js`
+
+Import the module with this declaration at the top of the file:
 `expressSanitizer` needs to be instantiated after `bodyParser', and before anything that requires the sanitized input, e.g.:
 
 ```javascript
-var express = require('express');
 var expressSanitizer = require('express-sanitizer');
-var bodyParser = require('body-parser');
-
-app.use(bodyParser.json()); // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-app.use(expressSanitizer([options])); // this line follows bodyParser() instantiations
 ```
+
+Mount the middleware *below* the bodyParser() instantiations and *above* mounting of your routes
 
 ```javascript
-app.post('/:urlparam', function(req, res) {
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
+// Mount express-sanitizer here
+app.use(expressSanitizer()); // this line follows bodyParser() instantiations
+
+app.use('/', index);
+app.use('/users', users);
+```
+
+### Edit `routes/index.js` and create a new route:
+
+```javascript
+router.post('/', function(req, res, next) {
   // replace an HTTP posted body property with the sanitized string
   req.body.sanitized = req.sanitize(req.body.propertyToSanitize);
+  // send the response
+  res.send('Your value was sanitized to: ' + req.body.sanitized);
 });
-
 ```
+
+Use a client such as Postman to post a `x-www-form-encoded` body value, with key named `propertyToSanitize`, to `http://localhost:3000`
 
 ## Output
 
@@ -57,6 +74,9 @@ This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSm
 This module trusts the dependencies to provide basic persistent XSS risk mitigation. A user of this package should review all packages and make their own decision on security and fitness for purpose. 
 
 ## Changelog
+
+### v1.0.3
+- Updated README to base example on an express-generator scaffolded application
 
 ### v1.0.2
 - Updated sanitizer dependency to 0.1.3
@@ -82,5 +102,5 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## License
 
-Copyright (c) 2017 Mark Andrews <20metresbelow@gmail.com>, MIT License
+Copyright (c) 2018 Mark Andrews <20metresbelow@gmail.com>, MIT License
 
