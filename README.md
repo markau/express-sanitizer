@@ -25,7 +25,6 @@ npm install --save express-sanitizer
 ### Edit `app.js`
 
 Import the module with this declaration at the top of the file:
-`expressSanitizer` needs to be instantiated after `bodyParser', and before anything that requires the sanitized input, e.g.:
 
 ```javascript
 var expressSanitizer = require('express-sanitizer');
