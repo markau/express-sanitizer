@@ -13,7 +13,7 @@ A useful complement to the [express-validator](https://github.com/ctavan/express
 
 ## Installation
 
-Scaffold an application using [http://expressjs.com/en/starter/generator.html](express-generator)
+Scaffold an application using [express-generator](http://expressjs.com/en/starter/generator.html)
 
 Then, install this library:
 ```
