@@ -1,6 +1,4 @@
 [![npm](https://img.shields.io/npm/v/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
-[![npm](https://img.shields.io/npm/dt/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
-[![npm](https://img.shields.io/npm/dm/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
 [![Build Status](https://travis-ci.org/markau/express-sanitizer.png?branch=master&style=flat-square)](https://travis-ci.org/markau/express-sanitizer)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
 [![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
@@ -66,13 +64,16 @@ will be sanitized to ' world'.
 
 ## Limitations
 
-This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer) with the specific purpose of mitigating against persistent XSS risks. 
+This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer) with the specific purpose of mitigating against persistent XSS risks (note the borderline abandonware comments in that repo). 
 
 ## Caveats
 
 This module trusts the dependencies to provide basic persistent XSS risk mitigation. A user of this package should review all packages and make their own decision on security and fitness for purpose. 
 
 ## Changelog
+
+### v1.0.4
+- Merged PR #3 from Brian M. Jemilo II
 
 ### v1.0.3
 - Updated README to base example on an express-generator scaffolded application
@@ -98,6 +99,7 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 - Mark Andrews <20metresbelow@gmail.com> 
 - Patrick Hogan <patrick@callinize.com>
 - Scott Ramsden @ScottRamsden
+- Brian M. Jemilo II <jemiloii@jemiloii.com>
 
 ## License
 
