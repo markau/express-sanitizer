@@ -30,16 +30,20 @@ Import the module
 const expressSanitizer = require('express-sanitizer');
 ```
 
-Mount the middleware *below* the bodyParser() instantiations and *above* mounting of your routes
+Mount the middleware *below* the `express.json()` (or, prior to express v4.16, `bodyParser()`) instantiation and *above* mounting of your routes
 
 ```javascript
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
 
-// Mount express-sanitizer here
-app.use(expressSanitizer()); // this line follows bodyParser() instantiations
+// Mount express-sanitizer middleware here
+app.use(expressSanitizer());
 
-app.use('/', index);
+app.post('/', function(req, res, next) {
+  // replace an HTTP posted body property with the sanitized string
+  const sanitizedString = req.sanitize(req.body.propertyToSanitize);
+  // send the response -- res.body.sanitized = " world"
+  res.send({ sanitized: sanitizedString });
+});
 ```
 
 ## Output

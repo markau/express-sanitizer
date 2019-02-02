@@ -4,3 +4,4 @@ node_modules
 .npmignore
 .travis.yml
 npm-debug.log
+./lib/express-sanitizer.test.js
