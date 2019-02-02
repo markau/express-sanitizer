@@ -5,7 +5,7 @@
     "name": "Mark Andrews",
     "email": "20metresbelow@gmail.com"
   },
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://github.com/markau/express-sanitizer",
   "repository": {
     "type": "git",
@@ -13,7 +13,9 @@
   },
   "license": "MIT",
   "main": "./index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha"
+  },
   "engines": {
     "node": "*"
   },
@@ -31,5 +33,13 @@
     "url": "https://github.com/markau/express-sanitizer/issues"
   },
   "_id": "express-validator@1.0.0",
-  "_from": "express-validator@latest"
+  "_from": "express-validator@latest",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "expect": "^24.0.0",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "node-mocks-http": "^1.7.3",
+    "supertest": "^3.4.2"
+  }
 }
