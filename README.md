@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/markau/express-sanitizer.png?branch=master&style=flat-square)](https://travis-ci.org/markau/express-sanitizer)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
 [![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
+[![Known Vulnerabilities](https://snyk.io/test/github/markau/express-sanitizer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/markau/express-sanitizer?targetFile=package.json)
 
 # express-sanitizer
 
