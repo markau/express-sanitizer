@@ -1,4 +1,4 @@
-name: Express-Sanitizer CI
+name: build
 
 on:
   push:
