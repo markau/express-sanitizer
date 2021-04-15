@@ -1,9 +1,10 @@
 [![npm](https://img.shields.io/npm/dm/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
-[![npm](https://img.shields.io/npm/v/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
 [![Build Status](https://github.com/markau/express-sanitizer/workflows/build/badge.svg?branch=master)](https://github.com/markau/express-sanitizer)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
 [![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
 [![Known Vulnerabilities](https://snyk.io/test/github/markau/express-sanitizer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/markau/express-sanitizer?targetFile=package.json)
+
+**Notice**: The primary dependency for this library hasn't been updated in 5 years. Before using this library, consider other options such as [express-validator](https://express-validator.github.io/docs/). 
 
 # express-sanitizer
 
@@ -57,13 +58,15 @@ will be sanitized to ' world'.
 
 ## Limitations
 
-This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer) with the specific purpose of mitigating against persistent XSS risks (note the borderline abandonware comments in that repo).
+This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer) with the specific purpose of mitigating against persistent XSS risks (<b>note the borderline abandonware comments in that repo!</b>).
 
 ## Caveats
 
 This module trusts the dependencies to provide basic persistent XSS risk mitigation. A user of this package should review all packages and make their own decision on security and fitness for purpose.
 
 ## Changelog
+### v1.0.6
+- Removed unused dependency
 
 ### v1.0.5
 - Unit tests (better late than never)
@@ -99,5 +102,5 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## License
 
-Copyright (c) 2019 Mark Andrews <20metresbelow@gmail.com>, MIT License
+Copyright (c) 2021 Mark Andrews <20metresbelow@gmail.com>, MIT License
 
