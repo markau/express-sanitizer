@@ -58,7 +58,7 @@ will be sanitized to ' world'.
 
 ## Limitations
 
-This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer) with the specific purpose of mitigating against persistent XSS risks (note the borderline abandonware comments in that repo).
+This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer) with the specific purpose of mitigating against persistent XSS risks (<b>note the borderline abandonware comments in that repo!</b>).
 
 ## Caveats
 
