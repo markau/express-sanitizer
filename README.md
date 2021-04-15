@@ -5,6 +5,8 @@
 [![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
 [![Known Vulnerabilities](https://snyk.io/test/github/markau/express-sanitizer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/markau/express-sanitizer?targetFile=package.json)
 
+**Notice**: The primary dependency for this library hasn't been updated in 5 years. Before using this library, consider other options such as [express-validator](https://express-validator.github.io/docs/). 
+
 # express-sanitizer
 
 An express middleware for [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer), which wraps [Google Caja sanitizer](https://code.google.com/p/google-caja/wiki/JsHtmlSanitizer).
@@ -64,6 +66,8 @@ This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSm
 This module trusts the dependencies to provide basic persistent XSS risk mitigation. A user of this package should review all packages and make their own decision on security and fitness for purpose.
 
 ## Changelog
+### v1.0.6
+- Removed unused dependency
 
 ### v1.0.5
 - Unit tests (better late than never)
