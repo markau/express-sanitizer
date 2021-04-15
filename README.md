@@ -1,5 +1,4 @@
 [![npm](https://img.shields.io/npm/dm/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
-[![npm](https://img.shields.io/npm/v/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
 [![Build Status](https://github.com/markau/express-sanitizer/workflows/build/badge.svg?branch=master)](https://github.com/markau/express-sanitizer)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
 [![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
@@ -103,5 +102,5 @@ This module trusts the dependencies to provide basic persistent XSS risk mitigat
 
 ## License
 
-Copyright (c) 2019 Mark Andrews <20metresbelow@gmail.com>, MIT License
+Copyright (c) 2021 Mark Andrews <20metresbelow@gmail.com>, MIT License
 
