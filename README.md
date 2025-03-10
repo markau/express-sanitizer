@@ -4,9 +4,9 @@
 [![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
 [![Known Vulnerabilities](https://snyk.io/test/github/markau/express-sanitizer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/markau/express-sanitizer?targetFile=package.json)
 
-> [!WARNING]
+> [!CAUTION]
 > Find an alternative to this library, such as [express-validator](https://express-validator.github.io/docs/).
-> This should be considered abandonware. The primary dependency for this library hasn't been updated in 6 years.
+> This library and its primary dependency (last updated 6 years ago) should be considered abandonware.
 
 # express-sanitizer
 
